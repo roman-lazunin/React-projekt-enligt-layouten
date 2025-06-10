@@ -1,5 +1,3 @@
-import React from "react";
-
 function Uppgift3() {
   return (
     <div className="uppgift3-page">

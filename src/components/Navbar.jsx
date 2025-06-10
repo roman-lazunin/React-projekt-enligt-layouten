@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import '../styles/components/Navbar.css'; 
@@ -7,7 +7,6 @@ import '../styles/components/Hamburger.css';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Stäng meny vid klick på länk eller overlay
   const handleClose = () => setIsOpen(false);
 
   return (
@@ -17,14 +16,12 @@ const Navbar = () => {
         {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
       </div>
       
-      {/* Desktop navigation */}
       <ul className="navbar__list">
         <li><Link to="/">Hem</Link></li>
         <li><Link to="/about">Om oss</Link></li>
         <li><Link to="/contact">Kontakt</Link></li>
       </ul>
 
-      {/* Mobil sidomeny + overlay */}
       {isOpen && (
         <>
           <div className="mobilemenu__overlay" onClick={handleClose}></div>

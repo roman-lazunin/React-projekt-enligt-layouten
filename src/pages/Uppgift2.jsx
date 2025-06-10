@@ -1,4 +1,3 @@
-import React from "react";
 import '../styles/pages/uppgift2.css';
 import PostList from '../components/PostsList';
 import TagList from '../components/TagList';

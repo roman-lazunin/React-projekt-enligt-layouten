@@ -28,7 +28,7 @@
 }
 
 /* Header styling */
-.app-header {
+.app-header h1 {
   width: 100%;
   background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
   color: #fff;
@@ -112,7 +112,7 @@
     padding: 1rem; /* Remove padding on mobile as well */
   }
   
-  .app-header {
+  .app-header h1 {
     font-size: 1.2rem;
     padding: 0.7rem 0 0.5rem 0;
   }

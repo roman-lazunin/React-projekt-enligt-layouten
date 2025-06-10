@@ -14,7 +14,7 @@ function App() {
     <Router>
       <Navbar />
       <header className="app-header">
-        F25D Borås YH - React kurs
+        <h1>F25D Borås YH - React kurs</h1>
       </header>
       <div className="app__content">
         <Sidebar />
