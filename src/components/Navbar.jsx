@@ -16,7 +16,9 @@ const Navbar = () => {
       <div className="navbar__hamburger" onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
       </div>
-      <ul className={`navbar__list ${isOpen ? 'navbar__list--open' : ''}`}>
+      
+      {/* Desktop navigation */}
+      <ul className="navbar__list">
         <li><Link to="/">Hem</Link></li>
         <li><Link to="/about">Om oss</Link></li>
         <li><Link to="/contact">Kontakt</Link></li>

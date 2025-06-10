@@ -1,4 +1,4 @@
-/* Hamburger och mobilmeny-stilar extraherade från Navbar.css */
+/* Hamburger och mobilmeny-stilar */
 
 /* Mobil sidomeny och overlay */
 .mobilemenu__overlay {
@@ -53,6 +53,7 @@
   border-radius: 4px;
   transition: background 0.2s;
 }
+
 .mobilemenu__list a:hover {
   background: #f0f0f0;
 }
@@ -66,7 +67,8 @@
   letter-spacing: 0.5px;
 }
 
-@media (min-width: 769px) {
+/* Visa endast mobilmeny på devices under 900px */
+@media (min-width: 901px) {
   .mobilemenu__overlay,
   .mobilemenu__panel {
     display: none !important;

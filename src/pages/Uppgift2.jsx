@@ -1,9 +1,15 @@
 import React from "react";
+import '../styles/pages/uppgift2.css';
+import PostList from '../components/PostsList';
+import TagList from '../components/TagList';
 
 function Uppgift2() {
   return (
-    <div className="uppgift2-page">
-      <h1>Uppgift 2</h1>
+    <div className="main-content">
+      <div className="uppgift2-content-container">
+        <PostList />
+        <TagList />
+      </div>
     </div>
   );
 }

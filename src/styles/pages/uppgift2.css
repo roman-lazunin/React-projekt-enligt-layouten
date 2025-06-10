@@ -1,0 +1,36 @@
+/* Grid-layout för Uppgift2-sidan */
+.uppgift2-content-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 2rem 0;
+}
+
+.uppgift2-content-container > .posts-list {
+  grid-column: 1 / span 2;
+}
+
+.uppgift2-content-container > .tag-list {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+@media (max-width: 900px) {
+  .uppgift2-content-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    justify-items: center;
+  }
+  .uppgift2-content-container > .posts-list,
+  .uppgift2-content-container > .tag-list {
+    grid-column: 1;
+    grid-row: auto;
+    width: 100%;
+    max-width: 400px;
+  }
+}
