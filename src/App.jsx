@@ -13,6 +13,9 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <header className="app-header">
+        F25D Borås YH- React kurs
+      </header>
       <div className="app__content">
         <Sidebar />
         <main className="main-content">

@@ -21,6 +21,20 @@
   overflow-y: auto;
 }
 
+/* Header styling */
+.app-header {
+  width: 100%;
+  background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1.2rem 0 1rem 0;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(30, 60, 114, 0.08);
+  z-index: 10;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .app__content {
@@ -29,5 +43,10 @@
   
   .main-content {
     padding: 1rem; /* Remove padding on mobile as well */
+  }
+  
+  .app-header {
+    font-size: 1.2rem;
+    padding: 0.7rem 0 0.5rem 0;
   }
 }
